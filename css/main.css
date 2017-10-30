@@ -1,20 +1,26 @@
+/*Estructura general*/
 *{
-margin:0;
-border: 0;
+  margin:0;
+  border: 0;
 
 }
 body{
-height: 100%;
-width: 100%;
-font-family:'Montserrat', sans-serif;
+
+  font-family:'Montserrat';
 }
+
+/*Sección Encabezado*/
 .encabezado{
   position: relative;
   padding: 15px;
-
   font-weight:bold;
   position: fixed;
   z-index: 2;/*por niveles de cercania de visivilidad trabaja en capas*/
+  position: fixed;
+  width: 100%;
+  top:0;
+  left: 0;
+
 }
 
 .logo{
@@ -23,68 +29,344 @@ font-family:'Montserrat', sans-serif;
 
 }
 a{
-   text-decoration: none;
-   display: block;
-   color:#fff;
- }
- /*cambio de color cuando se pasa el mousse*/
- a:hover{
-   color: #18bc9c;
- }
+  text-decoration: none;
+  display: block;
+  color:#fff;
+}
+/*cambio de color cuando se pasa el mousse*/
+a:hover{
+  color:#FF00BF;
+}
 
- ul{
-   list-style: none;
-   padding-right: 20px;
-   font-size:17px;
-   line-height:45px;
-   overflow: hidden;
-   /*border:1px solid white;*/
-   display: inline;
-   float: right;
- }
+ul{
+  list-style: none;
+  padding-right: 20px;
+  font-size:17px;
+  line-height:45px;
+  overflow: hidden;
+  /*border:1px solid white;*/
+  display: inline;
+  float: right;
+}
 
- li {
-   width: 100px;
-   text-align: center;
-   float:left;
+li {
+  width: 100px;
+  text-align: center;
+  float:left;
 
-   /*border: 1px solid green;*/
+
 
 }
-  /*Primera sección*/
+/*Primera sección*/
 .fondo{
-  width: 100%;
+  position: relative;
+
 }
 
 .img{
-width: 100%;
-float: left;
-}
-.primeraparte{
-background: linear-gradient(to bottom,#76278F, #2B1E66);
-font-family:'Montserrat', sans-serif;
-color:#fff;
-font-size: 20px;
-overflow: hidden;
-clear:both;
-display: flex;
-flex-direction: column;
-padding-left: 30px;
-padding-top: 30px;
+  width: 100%;
+  height: 100%;
+  float: left;
 }
 
-.img1{
-float:left;
-width: 50%;
-padding-left: 500px;
-padding-bottom:10px;
-}
-h1{
-padding: 30px;
+/*Sección flotante*/
+.containerflota{
+  font-family:'Montserrat';
+  color:#fff;
+  display: flex;
+  padding-top: 200px;
+  flex-grow: column nowrap;
+  position: absolute;
+  padding-left:850px;
 }
 .flota{
+  color:#2b1e66;
+  background-color: #fff;
+  padding: 50px;
+  width: 400px;
+  height: 350px;
+  padding: 50px;
 
 }
-/*
- * Estilos de tu proyecto
- */
+
+.flota h1{
+  text-transform: uppercase!important;
+  color: #352384;
+  font-size:2.5rem;
+
+
+}
+.flota h2{
+  color: #352384;
+  font-size:1rem;
+  letter-spacing: 1.5px;
+  margin-top: .5rem;
+}
+
+.phone{
+  color: gray;
+}
+input{
+  margin-bottom: 15px;
+  width: 100%;
+  border-bottom: 1px solid #352384;
+
+}
+#BecomeDrive{
+  background-color:#FF00BF;
+  color:#fff;
+  padding:10px;
+  border:10px;
+  width: 50%;
+  border-radius: 5px;
+  margin-bottom:10px;
+  text-align: center;
+  float: left;
+  overflow: hidden;
+  display: inline;
+}
+
+#SignRide{
+  display: inline-block;
+  padding-left: 30px;
+  text-decoration: underline;
+  color:gray;
+  clear:left;
+  padding-top:10px;
+}
+#SignRide:hover{
+  color: #b30086;
+
+}
+.texto p{
+  display: inline-block;
+  font-size:10px;
+}
+#texto{
+  display: inline-block;
+  padding-left: 10px;
+
+  color: #b30086;
+  clear:left;
+}
+#texto:hover{
+  text-decoration: underline;
+  color: #b30086;
+}
+
+/*Primera sección*/
+.container-primeraparte{
+  background: linear-gradient(to bottom,#76278F, #2B1E66);
+  font-family:'Montserrat';
+  color:#fff;
+
+  overflow: hidden;
+  clear:both;
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  padding: 100px;
+
+
+}
+.primeraparte{
+  width: 50%;
+}
+.primeraparte h1{
+  font-size: 25px;
+}
+
+.primeraparte h1::before{
+  content:"";
+  line-height: 100px;
+}
+p third-line{
+  line-height: 100px;
+}
+
+
+.celular{
+  display: flex;
+  flex-flow: row wrap;
+}
+.img1{
+  min-height: 22rem;
+  max-height: 40rem;
+  height: 100%;
+}
+
+h3{
+  font-size: 10px;
+}
+
+
+/*Segunda sección*/
+.video1{
+  padding-left:50px;
+  padding-right: 1000px;
+  overflow: hidden;
+  /*border: 2px solid black;*/
+  padding-bottom: 242px;
+  padding-top: 20px;
+  overflow: hidden;
+  clear:left;
+
+}
+
+#amplifyyouride{
+  position:relative;
+  left:0px;
+  height: 400px;
+  width: 800px;
+  float:right;
+  bottom:400px;
+
+
+}
+
+
+.video2{
+  position: absolute;
+  padding-right: 50px;
+  padding-left: 950px;
+  padding-bottom: 230px;
+  padding-top: 20px;
+  /*border: 2px solid black;*/
+  overflow: hidden;
+  clear:left;
+}
+
+#june {
+  position:relative;
+  height: 400px;
+  width: 800px;
+  float:left;
+  bottom:400px;
+
+}
+
+.video3{
+  padding-left:50px;
+  padding-right: 1000px;
+  position:absolute;
+  /*border: 2px solid black;*/
+  padding-top: 420px;
+  padding-bottom: 250px;
+  overflow: hidden;
+  clear:left;
+
+}
+#showing{
+  position:relative;
+  height: 400px;
+  width: 800px;
+  float:right;
+  bottom: 400px;
+  overflow: hidden;
+
+
+}
+
+/*Sección Pie de página*/
+.pie_pagina{
+
+  position: relative;
+  background-color:#333447;
+  color: white;
+  font-size: 18px;
+  clear: left;
+  line-height:2.0em;
+  list-style: none;
+  padding-top: 30px;
+  clear:left;
+
+}
+
+
+.login{
+  display: -webkit-flex;
+  display: flex;
+  text-align: center;
+  padding-bottom:150px;
+
+
+}
+.pie_pagina li{
+  padding-left: 220px;
+  padding-top: 30px;
+  text-align: center;
+
+
+}
+.pie_pagina h5{
+  font-size: 15px;
+
+}
+.hipervinculo{
+  width: 100px;
+  padding-top: 10px;
+
+
+}
+
+.web{
+
+  text-align: center;
+
+}
+
+.icono{
+  color:white;
+  width:30px;
+  height: 30px;
+  border-radius:50%;
+  border: 2px solid white;
+  font-size:1.6em;
+  margin-left: 90px;
+
+
+
+}
+
+.icono.fa{
+  font-size: 20px;
+  line-height: 33px;
+
+
+
+
+
+}
+.icono:hover{
+  color: #18bc9c;
+
+}
+
+hr{
+  background-color: #fff;
+  height: 2px;
+  width: 50%;
+
+  margin-left: 350px;
+
+
+}
+/*Ultima sección*/
+footer{
+  background-color:#333447;
+  color:#fff;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+footer h6{
+  display:block;
+
+}
+
+
+.referencia:hover{
+  text-decoration: underline;
+}
